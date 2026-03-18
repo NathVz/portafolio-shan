@@ -1,0 +1,102 @@
+<section class="skills">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="chewy-regular mb-3 text-center">Habilidades</h2>
+      </div>
+    </div>
+    <div class="row gy-3">
+      @for (skill of skills; track $index) {
+        <div class="col-md-4">
+          <div class="card bg-light border-0 shadow zoom-card">
+            <div class="card-body">
+              <div class="row gy-3">
+                <div class="col-md-12 d-flex align-items-center">
+                  <div class="img-icon me-3">
+                    <img
+                      [src]="skill.icon"
+                      alt="icon"
+                      width="50"
+                      class="rounded-circle"
+                    />
+                  </div>
+                  <p class="fw-semibold mb-0 fs-4">{{ skill.name }}</p>
+                </div>
+                <div class="col-md-12">
+                  <div
+                    class="w-100 d-flex justify-content-between iosevka-charon-mono-regular"
+                  >
+                    {{ skill.level }}
+                    <span>{{ skill.percentage }} %</span>
+                  </div>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    [attr.aria-valuenow]="skill.percentage"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="height: 15px"
+                  >
+                    <div
+                      class="progress-bar"
+                      [style.width.%]="skill.percentage"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-12">
+        <h2 class="chewy-regular mb-3 text-center">Tecnologías</h2>
+      </div>
+    </div>
+    <div class="row gy-3">
+      @for (item of technologies; track $index) {
+        <div class="col-md-4">
+          <div class="card bg-light border-0 shadow zoom-card">
+            <div class="card-body">
+              <div class="row gy-3">
+                <div class="col-md-12 d-flex align-items-center">
+                  <div class="img-icon me-3">
+                    <img
+                      [src]="item.icon"
+                      alt="icon"
+                      width="50"
+                      class="rounded-circle"
+                    />
+                  </div>
+                  <p class="fw-semibold mb-0 fs-4">{{ item.name }}</p>
+                </div>
+                <div class="col-md-12">
+                  <div
+                    class="w-100 d-flex justify-content-between iosevka-charon-mono-regular"
+                  >
+                    {{ item.level }}
+                    <span>{{ item.percentage }} %</span>
+                  </div>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    [attr.aria-valuenow]="item.percentage"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="height: 15px"
+                  >
+                    <div
+                      class="progress-bar"
+                      [style.width.%]="item.percentage"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

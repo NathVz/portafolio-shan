@@ -1,0 +1,25 @@
+.hero {
+  height: 100vh;
+  background: url("/img/bannerH.png") center/cover no-repeat;
+  width: 100%;
+  background-position-y: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.content-titles {
+  border: 5px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  width: 95%;
+  height: 90vh;
+  h1 {
+    font-size: 130px;
+    color: #fff;
+  }
+  h3 {
+    font-size: 50px;
+    color: var(--purple-color);
+  }
+}

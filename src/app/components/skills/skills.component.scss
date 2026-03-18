@@ -1,0 +1,26 @@
+.skills {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.img-icon {
+  width: 60px;
+  height: 60px;
+  background-color: var(--purple-light);
+  border-radius: 10px;
+  padding: 5px;
+}
+.progress-bar {
+  background: linear-gradient(90deg, var(--pink-color), var(--lila-color));
+  transition: width 1.5s ease-in-out;
+}
+.zoom-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+}
+.zoom-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}

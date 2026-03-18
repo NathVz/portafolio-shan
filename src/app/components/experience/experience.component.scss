@@ -1,0 +1,44 @@
+.experience {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.ctn-year {
+  position: relative;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+}
+.ctn-year::after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  background: var(--lila-color);
+}
+.circle-year {
+  background: linear-gradient(90deg, var(--lila-color), var(--pink-color));
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 18px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.zoom-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+}
+.zoom-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
