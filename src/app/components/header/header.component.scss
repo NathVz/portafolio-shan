@@ -1,12 +1,14 @@
 .hero {
-  height: 100vh;
-  background: url("/img/bannerH.png") center/cover no-repeat;
+  height: 95vh;
+  background: center/cover no-repeat;
   width: 100%;
-  background-position-y: -50px;
+  background-position-y: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-top: -10px;
+  overflow: hidden;
 }
 
 .content-titles {
@@ -17,9 +19,72 @@
   h1 {
     font-size: 130px;
     color: #fff;
+    letter-spacing: 1.5px;
   }
   h3 {
     font-size: 50px;
     color: var(--purple-color);
+  }
+}
+
+.bg-custom {
+  background-color: var(--purple-color);
+}
+
+.btn-cv {
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--purple-color);
+  font-size: 22px !important;
+  letter-spacing: 1px;
+  padding: 8px 15px 9px;
+  &:hover {
+    background: var(--lila-color);
+    cursor: pointer;
+    color: var(--purple-color);
+    border: 2px solid var(--lila-color);
+  }
+}
+
+.floating {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: var(--lila-color);
+  border-radius: 50%;
+  animation: flotar 6s infinite ease-in-out;
+}
+
+.floating-xl {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: var(--lila-color);
+  border-radius: 50%;
+  animation: flotar 6s infinite ease-in-out;
+}
+
+.circle1 {
+  top: 30%;
+  left: 10%;
+}
+
+.circle2 {
+  bottom: 20%;
+  right: 10%;
+}
+
+.circle3 {
+  top: 80%;
+  left: 25%;
+}
+
+@keyframes flotar {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
   }
 }

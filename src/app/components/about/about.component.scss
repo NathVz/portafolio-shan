@@ -1,11 +1,10 @@
 .about {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 
 .img-profile {
-  width: 60%;
+  width: 50%;
   border-radius: 50%;
-  margin: 0 auto;
-  display: block;
+  border: 10px solid var(--lila-color);
 }
