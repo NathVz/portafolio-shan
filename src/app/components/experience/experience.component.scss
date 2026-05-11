@@ -19,7 +19,11 @@
   background: var(--lila-color);
 }
 .circle-year {
-  background: linear-gradient(90deg, var(--lila-color), var(--pink-color));
+  background: linear-gradient(
+    135deg,
+    var(--purple-primary) 0%,
+    var(--purple-color) 100%
+  );
   width: 70px;
   height: 70px;
   border-radius: 50%;
